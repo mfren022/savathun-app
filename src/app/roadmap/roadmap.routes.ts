@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { RoadmapComponent } from './index';
+import { RoadmapComponent, RoadmapService } from './index';
 
 export const RoadmapRoutes: Routes = [
-    { path: '', component: RoadmapComponent, pathMatch: 'full' }
+    { path: '', component: RoadmapComponent, providers: [RoadmapService], pathMatch: 'full' }
 ]

@@ -1,0 +1,76 @@
+.release-container {
+    background-color: rgba(40, 40, 40, 1);
+    border-radius: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 10px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.release-backdrop {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    mask-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0));
+    margin-top: 68px;
+}
+
+.release-title-bar {
+    box-sizing: border-box;
+    padding: 0 25px;
+}
+
+h2 {
+    display: inline-block;
+    color: #eee;
+}
+
+.majorRelease .release-title-bar {
+    background-color: rgb(48, 87, 111);
+}
+
+.season .release-title-bar {
+    background-color: rgb(67, 115, 67);
+}
+
+.season-dlc .release-title-bar {
+    background-color: rgb(114, 111, 76);
+}
+
+.release-date {
+    font-size: 14px;
+    color: #ccc;
+    float: right;
+    font-weight: bold;
+    margin-top: 23px;
+}
+
+.lore::before {
+    content: '\201C';
+}
+
+.lore::after {
+    content: '\201D';
+}
+
+.lore {
+    font-weight: bold;
+    font-style: italic;
+    width: 90%;
+    margin: 30px auto;
+    text-shadow: 0 0 2px black;
+}
+
+.icon {
+    display: inline;
+    width: 1em;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+.unconfirmed {
+    color: lightcoral;
+}

@@ -1,0 +1,8 @@
+<div class="release-container {{data.type}}">
+    <div class="release-title-bar">
+        <h2>{{data.title}}</h2>
+        <p class="release-date">{{data.releaseDate | date}}</p>
+    </div>
+    <img class="release-backdrop" src="{{data.imageSrc}}" />
+    <div [innerHtml]="content"></div>
+</div>
