@@ -2,16 +2,20 @@
     <div class="right-panel">
         <p class="right-panel-title">Display options</p>
         <div class="checkbox-container">
-            <input type="checkbox" id="show-expansions" name="show-expansions" checked>
+            <input type="checkbox"
+            id="show-expansions"
+            [(ngModel)]="showExpansions">
             <label for="show-expansions"> Show Expansions</label>
         </div>
         <div class="checkbox-container">
-            <input type="checkbox" id="show-seasons" name="show-seasons" checked>
+            <input type="checkbox"
+            id="show-seasons"
+            [(ngModel)]="showSeasons">
             <label for="show-seasons"> Show Seasons</label>
         </div>
     </div>
 </header>
 
 <div class="page-center">
-    <app-release *ngFor="let release of releases" [data]="release"></app-release>
+    <app-release *ngFor="let release of releases" [data]="release" [hidden]="!((release.type == 'majorRelease' && showExpansions) || (release.type == 'season' && showSeasons))"></app-release>
 </div>
