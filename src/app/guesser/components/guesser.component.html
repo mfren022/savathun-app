@@ -1,0 +1,16 @@
+<header>
+    The Destiny Header
+</header>
+
+<body>
+    <div class="guesserbg">
+        <div *ngIf="question">
+            <h1 class="qheader">{{ question.question }}</h1>
+            <div class="button-holder">
+                <button *ngFor="let answer of answers" class="round-blue-button" (click)="checkAnswer(answer)">{{ answer }}</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
