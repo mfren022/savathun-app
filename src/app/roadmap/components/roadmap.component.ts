@@ -238,14 +238,14 @@ export class RoadmapComponent implements OnInit {
       title: 'Episode: Revenant',
       type: 'season',
       releaseDate: '2024-10-08',
-      imageSrc: 'media/e2.webp',
+      imageSrc: 'media/e2.png',
       contentSrc: 'content/e2.html'
     },
     {
       title: 'Episode: Heresy',
       type: 'season',
-      releaseDate: '',
-      imageSrc: 'media/e3.webp',
+      releaseDate: '2025-02-04',
+      imageSrc: 'media/e3.png',
       contentSrc: 'content/e3.html'
     }
   ];
